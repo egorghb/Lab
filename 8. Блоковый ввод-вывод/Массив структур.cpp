@@ -20,7 +20,7 @@ void input(int& k) {
 	cin >> k;
 	while (true) {
 		if (k < 0) {
-			cout << "Îøèáêà, ââåäèòå åù¸ ðàç: ";
+			cout << "ÐžÑˆÐ¸Ð±ÐºÐ°! Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐµÑ‰Ñ‘ Ñ€Ð°Ð·: ";
 			cin >> k;
 		}
 		else
@@ -30,22 +30,22 @@ void input(int& k) {
 
 void create(Film films_array[], int array_length) {
 
-	cout << "Çàïîëíèòå äàííûå î ôèëüìàõ:\n";
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ Ð¾ Ñ„Ð¸Ð»ÑŒÐ¼Ð°Ñ…: \n";
 
 	for (int i = 0; i < array_length; i++) {
 
-		cout << "Ââåäèòå íàçâàíèå ôèëüìà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð¸Ð»ÑŒÐ¼Ð°: ";
 		cin.ignore();
 		getline(cin, films_array[i].name);
 
-		cout << "Ââåäèòå èìÿ ðåæèññåðà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ Ñ€ÐµÐ¶Ð¸ÑÑÑ‘Ñ€Ð°: ";
 		getline(cin, films_array[i].director);
 
 
-		cout << "Ââåäèòå ãîä âûïóñêà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð³Ð¾Ð´ Ð²Ñ‹Ð¿ÑƒÑÐºÐ°: ";
 		input(films_array[i].year);
 
-		cout << "Ââåäèòå ñòîèìîñòü ôèëüìà: ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ñ„Ð¸Ð»ÑŒÐ¼Ð°: ";
 		input(films_array[i].cost);
 
 		cout << endl;
@@ -57,20 +57,20 @@ void create(Film films_array[], int array_length) {
 void print(int array_length) {
 
 	if (array_length == 0)
-		cout << "Ïóñòî.\n";
+		cout << "ÐŸÑƒÑÑ‚Ð¾.\n";
 	else {
 		cout << endl;
-		cout << "Èíôîðìàöèÿ î ôèëüìàõ:\n";
+		cout << "Ð˜Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ð¸Ñ Ð¾ Ñ„Ð¸Ð»ÑŒÐ¼Ð°Ñ…:\n";
 
 		for (int i = 0; i < array_length; i++) {
 
-			cout << "Íàçâàíèå ôèëüìà: " << films[i].name << endl;
+			cout << "ÐÐ°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð¸Ð»ÑŒÐ¼Ð°: " << films[i].name << endl;
 
-			cout << "Èìÿ ðåæèññåðà: " << films[i].director << endl;
+			cout << "Ð˜Ð¼Ñ Ñ€ÐµÐ¶Ð¸ÑÑÑ‘Ñ€Ð°: " << films[i].director << endl;
 
-			cout << "Ãîä âûïóñêà: " << films[i].year << endl;
+			cout << "Ð“Ð¾Ð´ Ð²Ñ‹Ð¿ÑƒÑÐºÐ°: " << films[i].year << endl;
 
-			cout << "Ñòîèìîñòü: " << films[i].cost << endl;
+			cout << "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ: " << films[i].cost << endl;
 
 			cout << endl;
 
@@ -134,7 +134,7 @@ int main()
 
 	system("chcp 1251>nul");
 
-	cout << "Ââåäèòå êîëè÷åñòâî ôèëüìîâ: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ñ„Ð¸Ð»ÑŒÐ¼Ð¾Ð²: ";
 
 	int amount_of_films = 0;
 
@@ -146,9 +146,9 @@ int main()
 
 	print(amount_of_films);
 
-	cout << "Óäàëåíèå ôèëüìà:\n";
+	cout << "Ð£Ð´Ð°Ð»ÐµÐ½Ð¸Ðµ Ñ„Ð¸Ð»ÑŒÐ¼Ð¾Ð²: \n";
 
-	cout << "Ââåäèòå çàäàííóþ ñòîèìîñòü, íå âûøå êîòîðîé äîëæåí áûòü ôèëüì: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð°Ð´Ð°Ð½Ð½ÑƒÑŽ ÑÑ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ, Ð½Ðµ Ð²Ñ‹ÑˆÐµ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð¹ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð±Ñ‹Ñ‚ÑŒ Ñ„Ð¸Ð»ÑŒ: ";
 
 	int set_cost;
 
@@ -158,11 +158,11 @@ int main()
 
 	print(amount_of_films);
 
-	cout << "Äàííûå î ñëåäóþùèõ ôèëüìàõ áóäóò äîáàâëåíû â áàçó äàííûõ:\n";
+	cout << "Ð”Ð°Ð½Ð½Ñ‹Ðµ Ð¾ ÑÐ»ÐµÐ´ÑƒÑŽÑ‰Ð¸Ñ… Ñ„Ð¸Ð»ÑŒÐ¼Ð°Ñ… Ð±ÑƒÐ´ÑƒÑ‚ Ð´Ð¾Ð±Ð°Ð²Ð»ÐµÐ½Ñ‹ Ð² Ð±Ð°Ð·Ñƒ Ð´Ð°Ð½Ð½Ñ‹Ñ…: \n";
 
 	add_film(amount_of_films);
 
-	cout << "Ñîäåðæèìîå áàçû äàííûõ ïîñëå âíåñåííûõ èçìåíåíèé:\n";
+	cout << "Ð¡Ð¾Ð´ÐµÑ€Ð¶Ð¸Ð¼Ð¾Ðµ Ð±Ð°Ð·Ñ‹ Ð´Ð°Ð½Ð½Ñ‹Ñ… Ð¿Ð¾ÑÐ»Ðµ Ð²Ð½ÐµÑÑ‘Ð½Ð½Ñ‹Ñ… Ð¸Ð·Ð¼ÐµÐ½ÐµÐ½Ð¸Ð¹: \n";
 
 	print(amount_of_films);
 
