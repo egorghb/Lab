@@ -208,7 +208,7 @@ int main() {
 		input.close();
 		input.open("База данных.txt");
 		int i = 0;
-		while (!input.eof()) {
+		while (!input.eof() && n - i > 0) {
 			getline(input, users_arr[i].name);
 			getline(input, users_arr[i].data);
 			getline(input, row);
@@ -302,6 +302,10 @@ int main() {
 		}
 		case 6:
 			exit(0);
+		}
+		default: {
+			cout << "Неверный номер действия.";
+			break;
 		}
 	}
 	return 0;
