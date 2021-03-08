@@ -27,7 +27,6 @@ void correct_input(int& num) {
 }
 
 void create(User users_arr[], int& size) {
-
 	cout << "Заполните данные о пользователях: \n";
 
 	for (int i = 0; i < size; i++) {
@@ -44,9 +43,7 @@ void create(User users_arr[], int& size) {
 		cin >> users_arr[i].number;
 
 		cout << endl;
-
 	}
-
 }
 
 
@@ -100,9 +97,7 @@ void delete_user_number(User users_arr[], int k) {
 				users_arr[i] = users_arr[i + 1];
 				i++;
 			}
-
 			n--;
-
 			User* array_copy = new User[n];
 
 			for (int g = 0; g < n; g++)
@@ -243,7 +238,7 @@ int main() {
 
 		switch (a) {
 		case 1: {
-			add_user(); 
+			add_user();
 			cout << "Пользователь добавлен.\n";
 			break;
 		}
@@ -270,7 +265,7 @@ int main() {
 				else
 					search(users_arr, key);
 			}
-			else  {
+			else {
 				cout << "Введите номер пользователя:\n";
 				long long key_number;
 				cin >> key_number;
@@ -302,10 +297,10 @@ int main() {
 		}
 		case 6:
 			exit(0);
-		}
 		default: {
 			cout << "Неверный номер действия.";
 			break;
+		}
 		}
 	}
 	return 0;
