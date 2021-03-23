@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "18_2. Классы и объекты. Использование конструкторов", "18_2. Классы и объекты. Использование конструкторов.vcxproj", "{C4FF6931-0125-4603-9665-40A9E96884CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4FF6931-0125-4603-9665-40A9E96884CA}.Debug|x64.ActiveCfg = Debug|x64
+		{C4FF6931-0125-4603-9665-40A9E96884CA}.Debug|x64.Build.0 = Debug|x64
+		{C4FF6931-0125-4603-9665-40A9E96884CA}.Debug|x86.ActiveCfg = Debug|Win32
+		{C4FF6931-0125-4603-9665-40A9E96884CA}.Debug|x86.Build.0 = Debug|Win32
+		{C4FF6931-0125-4603-9665-40A9E96884CA}.Release|x64.ActiveCfg = Release|x64
+		{C4FF6931-0125-4603-9665-40A9E96884CA}.Release|x64.Build.0 = Release|x64
+		{C4FF6931-0125-4603-9665-40A9E96884CA}.Release|x86.ActiveCfg = Release|Win32
+		{C4FF6931-0125-4603-9665-40A9E96884CA}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {404864F2-FA3A-4102-8B68-B913372E033C}
+	EndGlobalSection
+EndGlobal
