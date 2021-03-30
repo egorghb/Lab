@@ -1,0 +1,7 @@
+﻿  18_5. Классы и объекты.  Наследование. Виртуальные функции. Полиморфизм.cpp
+  Student.cpp
+  Vector.cpp
+  Создание кода...
+Person.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Object::Object(void)" (??0Object@@QAE@XZ) в функции "public: __thiscall Person::Person(class Person const &)" (??0Person@@QAE@ABV0@@Z).
+Person.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: __thiscall Object::~Object(void)" (??1Object@@QAE@XZ) в функции __unwindfunclet$??0Person@@QAE@ABV0@@Z$0.
+C:\Users\Acer\Desktop\GitHub\18_5. Классы и объекты.  Наследование. Виртуальные функции. Полиморфизм\Debug\18_5. Классы и объекты.  Наследование. Виртуальные функции. Полиморфизм.exe : fatal error LNK1120: неразрешенных внешних элементов: 2
